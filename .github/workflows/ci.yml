@@ -30,6 +30,7 @@ jobs:
   test:
     runs-on: ubuntu-latest
     strategy:
+      fail-fast: false # run every Python version even if one fails
       matrix:
         # TODO 1 (done): run this job on Python "3.11" and "3.12"
         python-version: ["3.11", "3.12"]
